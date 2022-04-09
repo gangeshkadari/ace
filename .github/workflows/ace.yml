@@ -9,11 +9,10 @@ on:
 
 jobs:
   build:
-  
-  
-  
+   runs-on: ubuntu-latest  
+   steps:
   - uses: actions/checkout@v3
-      - name: Set up JDK 11
+      - name: SetupJDK
         uses: actions/setup-java@v3
         with:
           java-version: '11'
